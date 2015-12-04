@@ -6,7 +6,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.network "private_network", ip: "192.168.33.10"
 
-  config.vm.synced_folder "./", "/home/vagrant/home"
+  config.vm.synced_folder "./media", "/home/vagrant/media"
 
   config.vm.provider "virtualbox" do |vb|
      # vb.gui = true
